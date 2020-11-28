@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>欢迎</title>
+    <script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js">
+    </script>
+</head>
+<body>
+    <h1>欢迎进入本系统</h1>
+    <div>
+        <form id="byId" action="/student/detail" >
+            <label>待查询学生ID：</label>
+            <input id="id" name="id" type="text"/>
+            <button type="submit">查询</button>
+        </form>
+    </div>
+    <br>
+    <div>
+        <form action="/student/all" method="post">
+            <label>查询所有学生</label>
+            <button type="submit">查询</button>
+        </form>
+    </div>
+</body>
+</html>
